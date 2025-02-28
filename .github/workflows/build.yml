@@ -22,7 +22,7 @@ jobs:
         env:
           IDF_TARGET: ${{ matrix.idf_target }}
         shell: bash
-        working-directory: examples/camera_example
+        working-directory: examples/camera_example1
         run: |
           . ${IDF_PATH}/export.sh
           export PEDANTIC_FLAGS="-DIDF_CI_BUILD -Werror -Werror=deprecated-declarations -Werror=unused-variable -Werror=unused-but-set-variable -Werror=unused-function"
